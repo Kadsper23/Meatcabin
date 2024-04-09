@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwitchScript : MonoBehaviour, IInteractable
 {
 
-    public Light light;
+    public new Light light;
 
     public bool isOn = true;
 
