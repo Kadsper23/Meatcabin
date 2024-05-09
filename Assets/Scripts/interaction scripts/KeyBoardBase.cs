@@ -10,7 +10,7 @@ public class KeyBoardBase : MonoBehaviour
 
     public TextMeshPro tmp;
 
-    public AudioSource audio;
+    public AudioSource audioo;
 
     public GameObject tvScreen;
     void Start()
@@ -25,7 +25,7 @@ public class KeyBoardBase : MonoBehaviour
         if (CurrentCode ==  CorrectCode)
         {
             Destroy(tvScreen);
-            audio.Play();
+            audioo.Play();
 
             tmp.text = "You hear a sound in the bedroom...";
         }

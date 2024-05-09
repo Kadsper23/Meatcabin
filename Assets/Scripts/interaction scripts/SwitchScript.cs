@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwitchScript : MonoBehaviour, IInteractable
 {
 
-    public new Light light;
+    public Light Light;
 
     public bool isOn = true;
 
@@ -24,14 +24,14 @@ public class SwitchScript : MonoBehaviour, IInteractable
     {
         if (isOn)
         {
-            light.intensity = 0.1f;
+            Light.intensity = 0.1f;
 
             isOn = false;
 
         }
         else
         {
-            light.intensity = 1;
+            Light.intensity = 1;
 
             isOn = true;
         }
